@@ -40,7 +40,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[50.657934664561,1.4153837014602584],[53.69729411237004,10.577615561304537]]);
+        }).fitBounds([[51.62322353342108,3.438808295507699],[53.13655736068261,8.019924225429826]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -99,7 +99,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(196,60,57,0.0)',
-                interactive: false,
+                interactive: true,
             }
         }
         map.createPane('pane_Landsgrens_1');
@@ -107,7 +107,7 @@
         map.getPane('pane_Landsgrens_1').style['mix-blend-mode'] = 'normal';
         var layer_Landsgrens_1 = new L.geoJson(json_Landsgrens_1, {
             attribution: '',
-            interactive: false,
+            interactive: true,
             dataVar: 'json_Landsgrens_1',
             layerName: 'layer_Landsgrens_1',
             pane: 'pane_Landsgrens_1',
